@@ -1,14 +1,13 @@
 package com.vogella.android.api;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.vogella.android.api.MyAdapter;
-import com.vogella.android.api.R;
+import com.google.gson.Gson;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends Activity {
@@ -32,7 +31,20 @@ public class MainActivity extends Activity {
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        mAdapter = new MyAdapter(input);
+        mAdapter = new MyAdapter(input, new MyAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Films item) {
+                detailsFilms(item);
+            }
+        });
         recyclerView.setAdapter(mAdapter);
+    }
+
+    public void detailsFilms(Films films){
+        Gson gson = new Gson();
+        String json = gson.toJson(films);
+        Intent detailsIntent = new Intent(this, DetailsActivity.class);
+        detailsIntent.putExtra("anime", json);
+        startActivity(detailsIntent);
     }
 }
