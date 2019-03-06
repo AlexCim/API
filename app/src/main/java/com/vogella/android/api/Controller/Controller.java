@@ -1,4 +1,4 @@
-package com.vogella.android.api;
+package com.vogella.android.api.Controller;
 
 import android.util.Log;
 
@@ -6,7 +6,8 @@ import java.util.List;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.vogella.android.api.GerritAPI;
+import com.vogella.android.api.View.MainActivity;
+import com.vogella.android.api.model.Films;
 
 import retrofit2.Call;
 import retrofit2.Callback;

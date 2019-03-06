@@ -1,7 +1,9 @@
-package com.vogella.android.api;
+package com.vogella.android.api.View;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.vogella.android.api.R;
 
 public class DetailsActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.vogella.android.api;
+package com.vogella.android.api.model;
 
 public class Films {
     private String title;

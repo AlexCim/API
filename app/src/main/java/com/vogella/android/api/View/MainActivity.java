@@ -1,4 +1,4 @@
-package com.vogella.android.api;
+package com.vogella.android.api.View;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.google.gson.Gson;
+import com.vogella.android.api.Controller.Controller;
+import com.vogella.android.api.R;
+import com.vogella.android.api.model.Films;
 
 import java.util.List;
 
