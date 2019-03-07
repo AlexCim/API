@@ -25,14 +25,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
         public TextView txtHeader;
-        //public TextView txtFooter;
+        public TextView txtFooter;
         public View layout;
 
         public ViewHolder(View v) {
             super(v);
             layout = v;
             txtHeader = (TextView) v.findViewById(R.id.firstLine);
-            //txtFooter = (TextView) v.findViewById(R.id.secondLine);
+            txtFooter = (TextView) v.findViewById(R.id.secondLine);
         }
     }
 
@@ -73,7 +73,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         // - replace the contents of the view with that element
         final Films currentFilm = values.get(position);
         final String name = currentFilm.getTitle();
+        final String date = currentFilm.getRelease_date();
         holder.txtHeader.setText(name);
+        holder.txtFooter.setText(date);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
                 listener.onItemClick(currentFilm);
