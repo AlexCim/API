@@ -7,12 +7,18 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/my_icon"
-        android:label="@string/app_name"
+        android:label="Films Studio Ghibli"
         android:roundIcon="@mipmap/my_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.DetailsActivity"></activity>
+        <activity android:name=".View.DetailsActivity" />
         <activity android:name=".View.MainActivity">
+        </activity>
+        <activity
+            android:name=".View.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
