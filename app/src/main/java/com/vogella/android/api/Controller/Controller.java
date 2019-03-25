@@ -43,6 +43,7 @@ public class Controller implements Callback<List<Films>> {
         @Override
         public void onResponse(Call<List<Films>> call, Response<List<Films>> response) {
             List<Films> listFilms = response.body();
+
             activity.showList(listFilms);
         }
 

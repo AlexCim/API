@@ -31,6 +31,7 @@ public class DetailsActivity extends AppCompatActivity {
         String json = getIntent().getStringExtra("anime");
         Gson gson = new Gson();
         Films item = gson.fromJson(json ,Films.class);
+
         title.setText("Title: " + item.getTitle());
         director.setText("Director: " + item.getDirector());
         release_date.setText("Date: " + item.getRelease_date());

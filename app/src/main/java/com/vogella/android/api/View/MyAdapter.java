@@ -15,6 +15,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     private List<Films> values;
     private final OnItemClickListener listener;
 
+
+
     public interface OnItemClickListener {
         void onItemClick(Films item);
     }
