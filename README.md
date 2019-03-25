@@ -1,10 +1,19 @@
-Projet Android
-Le projet Android réalisé est une application qui va récupérer une API sur internet et en afficher le contenu. 
-Mon application commence premièrement par un SplashScreen avec une image du Studio Ghibli. 
-Puis une autre activité est lancé avec une liste de film du Studio Ghibli récupérer d'une API trouver sur internet.
-Lors d'un clic sur l'un des films, une autre activité est lancé affichant un certains nombres de détails sur ce film:
-  -Année de production
-  -Description
-  -Producteur
-  ...
- Une architecture MVC est mis en place dans ce projet.
+# Ghibli Application
+
+## Présentation
+C'est un projet de programmation mobile dont le but était la création d'une application Android codé sur Android Studio.
+Cette application affiche une liste de films du Studio Ghibli et utilise l'API trouvé sur https://ghibliapi.herokuapp.com/#section/Studio-Ghibli-API.
+
+## Consignes
+- Installation d'Android Studio
+- Charger une API
+- 2 activités/écrans (acceuil avec la liste, détails d'un item de la liste)
+- Affichage d'une liste dans un RecyclerView
+
+## Fonctions supplémentaires
+- Splash affichant un logo du Studio Ghibli
+- Modification de l'icone de l'application
+
+
+
+
