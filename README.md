@@ -13,6 +13,11 @@ Cette application affiche une liste de films du Studio Ghibli et utilise l'API t
 ## Fonctions supplémentaires
 - Splash affichant un logo du Studio Ghibli
 - Modification de l'icone de l'application
+- Stockage de données en cache
+- Architecture MVC
+
+## Fonctionnalités
+- Icone de lancement
 
 
 
