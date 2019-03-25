@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
         else{
             sharedPreferences
                     .edit()
-                    .putString(PREFS_TITLE, "florent")
+                    .putString(PREFS_TITLE, "Alex")
                     .apply();
             Toast.makeText(this, "Sauvegardé, relancez l'application pour voir le résultat", Toast.LENGTH_SHORT).show();
         }
