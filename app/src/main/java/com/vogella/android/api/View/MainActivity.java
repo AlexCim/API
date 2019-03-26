@@ -21,8 +21,8 @@ public class MainActivity extends Activity {
     private RecyclerView.LayoutManager layoutManager;
     private Controller controller;
 
-    private static final String PREFS_TITLE = "PREFS_TITLE";
-    SharedPreferences sharedPreferences;
+    //private static final String PREFS_TITLE = "PREFS_TITLE";
+    //SharedPreferences sharedPreferences;
 
 
     @Override
@@ -30,10 +30,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.my_recycler_view);
-        controller = new Controller(this);
+        controller = new Controller(this, getBaseContext());
         controller.start();
 
-        sharedPreferences = getBaseContext().getSharedPreferences(PREFS_TITLE, MODE_PRIVATE);
+        /*sharedPreferences = getBaseContext().getSharedPreferences(PREFS_TITLE, MODE_PRIVATE);
         if (sharedPreferences.contains(PREFS_TITLE)) {
             String title = sharedPreferences.getString(PREFS_TITLE,null);
             Toast.makeText(this, title, Toast.LENGTH_SHORT).show();
@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
                     .putString(PREFS_TITLE, "Alex")
                     .apply();
             Toast.makeText(this, "Sauvegardé, relancez l'application pour voir le résultat", Toast.LENGTH_SHORT).show();
-        }
+        }*/
 
     }
 
