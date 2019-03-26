@@ -17,8 +17,19 @@ Cette application affiche une liste de films du Studio Ghibli et utilise l'API t
 - Architecture MVC
 
 ## Fonctionnalités
+
 - Icone de lancement
+<img src="Icone.png" alt="Icone">
 
 
+- Splash Screen
+<img src="SplashScreen.png" alt="splash">
 
+
+- Ecran d'accueil
+<img src="EcranAcceuil.png" alt="accueil">
+
+
+- Ecran de détails
+<img src="Details.png" alt="details">
 
